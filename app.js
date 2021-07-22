@@ -3,7 +3,8 @@ let express=require('express');
 let https=require('https');
 let bodyparser=require('body-parser');
 let ejs = require("ejs");
-let port =process.env.PORT ||8080;
+// let port =process.env.PORT ||8080;
+let port=8080;
 
 let app=express();
 
@@ -35,7 +36,7 @@ res.render("result",{one:condition1,two:temp1,three:imgurl1,four:cityname});
 
 app.post('/',(req,res)=>{
 let city1=req.body.city;
-let url="https://api.openweathermap.org/data/2.5/weather?q="+city1+"&appid=f0767e35ba26d5e1b35b0621b6696ade";
+let url="https://api.openweathermap.org/data/2.5/weather?q="+city1+"&appid=f0767e35ba26d5e1b35b0621b6696ade&units=metric";
 
 https.get(url,(response)=>{
 
