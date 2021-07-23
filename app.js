@@ -3,7 +3,7 @@ let express=require('express');
 let https=require('https');
 let bodyparser=require('body-parser');
 let ejs = require("ejs");
-let port =process.env.PORT ||5000;
+let port =process.env.PORT|| 5000;
 
 
 let app=express();
@@ -48,7 +48,7 @@ let a=JSON.parse(d);
 let condition=a.weather[0].main;
 let temp=a.main.temp;
 let imgid=a.weather[0].icon;
-let imgurl="http://openweathermap.org/img/wn/"+imgid+"@2x.png";
+let imgurl="http://openweathermap.org/img/wn/"+imgid+"@4x.png";
 
 condition1=condition;
 temp1=temp;
