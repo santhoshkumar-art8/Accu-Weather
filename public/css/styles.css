@@ -18,7 +18,13 @@
 .footer-padding {
 	padding-bottom: 60px;
 }
-
+.result{
+    background-color: FFFAE0 ;
+}
+.pic{
+  margin-left: 30px;
+  
+}
 .footer {
 	position: absolute;
 	text-align: center;
@@ -40,11 +46,17 @@ form{
 label,h1{
     color:#DF0174;
 }
-body{
-    background-color: #F2F2F2;
+body{ 
+    background-color: FFFAE0;
 }
 .ins li{
     display: inline;
     line-height: 1.5rem;
     padding:5px 5px;
+}
+
+@media (max-width:640px){
+    h2{
+        font-size: x-large;
+    }
 }

@@ -3,6 +3,7 @@ let express=require('express');
 let https=require('https');
 let bodyparser=require('body-parser');
 let ejs = require("ejs");
+const { write } = require('fs');
 let port =process.env.PORT|| 5000;
 
 
@@ -25,6 +26,8 @@ app.get('/',(req,res)=>{
 //   res.send("<img src="+ imgurl1 +" alt>");  
 
 });
+
+
 
 app.get('/result',(req,res)=>{
     
